@@ -4,5 +4,10 @@ import { Slider } from "./components/Slider/Slider";
 import "./app.scss";
 
 export const App = () => {
-  return <div className="app"></div>;
+  return (
+    <div className="app">
+      <Navbar />
+      <Slider />
+    </div>
+  );
 };

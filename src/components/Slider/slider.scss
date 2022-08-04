@@ -1,0 +1,68 @@
+.slider {
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  &__container {
+    display: grid;
+    margin: 0 auto;
+    padding-inline: 10px;
+    max-width: 598px;
+    align-self: center;
+    margin-top: 184px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 350px;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 83px;
+    text-align: center;
+    color: #f2f4f7;
+
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: 41px;
+    }
+  }
+
+  &__description {
+    margin-top: 32px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #f2f4f7;
+  }
+
+  &__button {
+    margin-top: 80px;
+    margin-bottom: 64px;
+
+    justify-self: center;
+    background: none;
+    border: none;
+  }
+
+  &__dots {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  &__dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 20px;
+    background-color: none;
+    border: 2px solid gray;
+    border-radius: 50%;
+
+    &--active {
+      border: 2px solid white;
+    }
+  }
+}
